@@ -16,7 +16,8 @@ h1 {
 
 .header {
   background-color: #000000;
-  color: #ffffff; }
+  color: #ffffff;
+  box-shadow: 5px 5px 5px 2px #ccc; }
   .header__container {
     margin: 0 auto;
     max-width: 323px; }
@@ -59,3 +60,91 @@ h1 {
               text-transform: uppercase;
               border-top: 1px solid #ffffff;
               padding-top: 0.5em; }
+
+.intro {
+  background-color: #F6E9E9;
+  padding: 2.5em;
+  font-family: "Roboto", sans-serif; }
+  .intro__title {
+    font-size: 3rem;
+    text-transform: lowercase;
+    font-weight: 700;
+    padding: 0;
+    margin-bottom: 0.5em;
+    letter-spacing: -0.1rem; }
+  .intro p {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 0.5em; }
+    .intro p:last-of-type {
+      margin-bottom: 0; }
+
+.projects {
+  padding: 1.5em 1em;
+  font-family: "Roboto", sans-serif; }
+  .projects__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 0.5em; }
+    .projects__container__title {
+      font-size: 3rem;
+      text-transform: lowercase;
+      font-weight: 300;
+      padding: 0;
+      letter-spacing: -0.1rem;
+      line-height: 0.85; }
+      .projects__container__title__bold {
+        font-weight: 700;
+        font-size: 3rem; }
+    .projects__container__filter {
+      font-style: italic;
+      text-align: right;
+      font-size: 1.125rem;
+      letter-spacing: -0.05rem;
+      align-self: flex-end; }
+
+.skills {
+  padding: 1.5em 1em;
+  font-family: "Roboto", sans-serif; }
+  .skills__title {
+    font-size: 3rem;
+    text-transform: lowercase;
+    font-weight: 300;
+    padding: 0;
+    margin-bottom: 0.5em;
+    letter-spacing: -0.1rem;
+    line-height: 1; }
+    .skills__title__bold {
+      font-weight: 700;
+      font-size: 3rem; }
+  .skills p {
+    font-size: 1.125rem;
+    font-weight: 300;
+    margin-bottom: 0.5em; }
+  .skills__list {
+    margin-top: 1.5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+    .skills__list__col {
+      list-style-type: none;
+      text-align: right;
+      width: 45%;
+      font-family: "Roboto", sans-serif;
+      font-weight: 900;
+      font-style: italic; }
+      .skills__list__col__item {
+        font-size: 1.5rem;
+        border-bottom: 5px solid;
+        margin-bottom: 0.5em; }
+      .skills__list__col li.item-1 {
+        border-color: #262626; }
+      .skills__list__col li.item-2 {
+        border-color: #4d4d4d; }
+      .skills__list__col li.item-3 {
+        border-color: #737373; }
+      .skills__list__col li.item-4 {
+        border-color: #999999; }
+      .skills__list__col li.item-5 {
+        border-color: #bfbfbf; }

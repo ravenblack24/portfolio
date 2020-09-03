@@ -1,0 +1,35 @@
+.projects {
+    padding: 1.5em 1em;
+    font-family: $ff-main;
+
+    &__container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 0.5em;
+    
+        &__title {
+            font-size: 3rem;
+            text-transform: lowercase;
+            font-weight: 300;
+            padding:0;
+            
+            letter-spacing: -0.1rem;
+            line-height: 0.85;
+
+            &__bold {
+                font-weight: 700;
+                font-size: 3rem;
+            }
+        }
+
+        &__filter {
+            font-style: italic;
+            text-align: right;
+            font-size: 1.125rem;
+            letter-spacing: -0.05rem;
+            align-self: flex-end;
+            
+        }
+    }
+}

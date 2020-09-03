@@ -1,0 +1,57 @@
+.skills {
+    padding: 1.5em 1em;
+    font-family: $ff-main;
+    
+    &__title {
+        font-size: 3rem;
+        text-transform: lowercase;
+        font-weight: 300;
+        padding:0;
+        margin-bottom: 0.5em;
+        
+        letter-spacing: -0.1rem;
+        line-height: 1;
+
+        &__bold {
+            font-weight: 700;
+            font-size: 3rem;
+        }
+    }
+
+    p {
+        font-size: 1.125rem;
+        font-weight: 300;
+        margin-bottom: 0.5em;
+    }
+
+    &__list {
+        margin-top: 1.5em;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+
+        &__col {
+            list-style-type: none;
+            text-align: right;
+            width: 45%;
+            font-family: $ff-main;
+            font-weight: 900;
+            font-style: italic;
+
+            &__item {
+                font-size: 1.5rem; 
+                border-bottom: 5px solid;
+                margin-bottom: 0.5em;
+            }
+
+            @for $i from 1 through 5 {
+                & li.item-#{$i} {
+                    border-color: lighten(#000, $i*15%);
+                }
+            }
+
+ 
+        }
+    }
+}

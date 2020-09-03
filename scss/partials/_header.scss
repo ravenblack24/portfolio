@@ -1,6 +1,7 @@
 .header {
     background-color: $black;
     color: $white;
+    box-shadow: 5px 5px 5px 2px #ccc;
 
     &__container {
         margin: 0 auto;
