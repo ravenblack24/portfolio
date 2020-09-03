@@ -17,42 +17,45 @@ h1 {
 .header {
   background-color: #000000;
   color: #ffffff; }
-  .header__logo {
-    padding: 1em 0 0 1em; }
-    .header__logo__circle {
-      background-color: #ffffff;
-      width: 116px;
-      height: 116px;
-      border-radius: 50%; }
-    .header__logo__initials {
-      font-family: "Grand Hotel", cursive;
-      font-size: 4rem;
-      color: #000000;
-      padding: 0.2em 0 0 0.4em; }
-  .header__intro {
-    margin-top: -1.75em;
-    padding-right: 1.25em;
-    letter-spacing: -0.1em; }
-  .header__nav {
-    width: 90%;
-    padding: 1.75em 0 0.75em;
+  .header__container {
     margin: 0 auto;
-    text-align: center; }
-    .header__nav__menu {
-      padding: 0;
-      margin: 0; }
-      .header__nav__menu__item {
-        display: inline;
-        font-family: "Roboto", sans-serif;
-        text-transform: lowercase;
-        padding-right: 1em; }
-        .header__nav__menu__item:last-of-type {
-          padding-right: 0; }
-        .header__nav__menu__item__link {
-          text-decoration: none;
-          color: #ffffff;
-          font-size: 0.875rem; }
-          .header__nav__menu__item__link:hover, .header__nav__menu__item__link:focus {
-            text-transform: uppercase;
-            border-top: 1px solid #ffffff;
-            padding-top: 0.5em; }
+    max-width: 323px; }
+    .header__container__logo {
+      padding: 2em 0 0 1em; }
+      .header__container__logo__circle {
+        background-color: #ffffff;
+        width: 116px;
+        height: 116px;
+        border-radius: 50%; }
+      .header__container__logo__initials {
+        font-family: "Grand Hotel", cursive;
+        font-size: 4rem;
+        color: #000000;
+        padding: 0.2em 0 0 0.4em; }
+    .header__container__intro {
+      margin-top: -1.75em;
+      padding-right: 1.25em;
+      letter-spacing: -0.1em; }
+    .header__container__nav {
+      width: 90%;
+      padding: 1.75em 0 0.75em;
+      margin: 0 auto;
+      text-align: center; }
+      .header__container__nav__menu {
+        padding: 0;
+        margin: 0; }
+        .header__container__nav__menu__item {
+          display: inline;
+          font-family: "Roboto", sans-serif;
+          text-transform: lowercase;
+          padding-right: 1em; }
+          .header__container__nav__menu__item:last-of-type {
+            padding-right: 0; }
+          .header__container__nav__menu__item__link {
+            text-decoration: none;
+            color: #ffffff;
+            font-size: 0.875rem; }
+            .header__container__nav__menu__item__link:hover, .header__container__nav__menu__item__link:focus {
+              text-transform: uppercase;
+              border-top: 1px solid #ffffff;
+              padding-top: 0.5em; }
