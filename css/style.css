@@ -148,3 +148,33 @@ h1 {
         border-color: #999999; }
       .skills__list__col li.item-5 {
         border-color: #bfbfbf; }
+
+.contact {
+  padding: 2em 2em;
+  font-family: "Roboto", sans-serif; }
+  .contact__container {
+    margin-bottom: 1.5em; }
+    .contact__container__title, .contact__container__intro {
+      font-size: 3rem;
+      text-transform: lowercase;
+      font-weight: 300;
+      line-height: 1;
+      letter-spacing: -0.1rem; }
+    .contact__container__intro {
+      font-weight: 700; }
+  .contact__form__field {
+    height: 2.25em;
+    width: 100%;
+    margin-bottom: 1em; }
+  .contact__form__textarea {
+    width: 100%;
+    margin-bottom: 0.75em; }
+  .contact__form__cta {
+    width: 60%;
+    height: 2.25em;
+    font-size: 1.125rem;
+    font-weight: 700;
+    background-color: white;
+    margin: 0 auto;
+    display: block;
+    border: 1px solid #000; }
