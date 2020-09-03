@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" /> 
+    <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
     <header class="header">
@@ -75,17 +76,26 @@
             <label for="email">email</label><br />
             <input type="text" name="email" id="email" class="contact__form__field" /><br />
             <label for="message">your message</label><br />
-            <textarea type="textarea" name="message" id="message"  class="contact__form__textarea" rows="8"></textarea> 
-            <button class="contact__form__cta">submit</button>
+            <textarea type="textarea" name="message" id="message"  class="contact__form__textarea" rows="9"></textarea> 
+            <button class="contact__form__cta" type="submit">submit</button>
         </form>
     </section>
-    <footer>
-        <ul>
-            <li>Github</li>
-            <li>freecodecamp</li>
-            <li>codewars</li>
-        </ul>
-    </footer>
+  
+
+    <section class="footer">
+        
+        <ul class="footer__social">
+            <li class="footer__social__item">
+                <a href="#" class="footer__social__item__cta"><i class="fab fa-github footer__social__item__cta__icon" ></i></a> 
+           </li>
+            <li class="footer__social__item">
+                 <a href="#" class="footer__social__item__cta"><i class="fab fa-free-code-camp footer__social__item__cta__icon"></i></a>
+            </li>
+            <li class="footer__social__item">
+                 <a href="#" class="footer__social__item__cta"><i class="fas fa-code footer__social__item__cta__icon"></i></a> 
+             </li> 
+        </ul> 
+    </section>
     
 </body>
 </html>

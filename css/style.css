@@ -7,12 +7,15 @@ h1 {
   text-align: right;
   line-height: 0.8; }
 
-*,
-*:before,
-*.after {
+* {
+  box-sizing: border-box;
   margin: 0;
-  padding: 0;
-  font-size: 16px; }
+  padding: 0; }
+
+body {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
 
 .header {
   background-color: #000000;
@@ -151,7 +154,9 @@ h1 {
 
 .contact {
   padding: 2em 2em;
-  font-family: "Roboto", sans-serif; }
+  font-family: "Roboto", sans-serif;
+  z-index: 5;
+  position: relative; }
   .contact__container {
     margin-bottom: 1.5em; }
     .contact__container__title, .contact__container__intro {
@@ -178,3 +183,26 @@ h1 {
     margin: 0 auto;
     display: block;
     border: 1px solid #000; }
+
+.fab {
+  font-size: 30px; }
+
+.footer {
+  background-color: #000;
+  margin-top: -9.5em;
+  padding: 10em 2em 2.25em 2em; }
+  .footer__social {
+    text-align: center;
+    list-style-type: none; }
+    .footer__social__item {
+      display: inline;
+      padding-right: 1.5em; }
+      .footer__social__item__cta__icon {
+        font-size: 3rem;
+        color: white;
+        transition: transform 1s; }
+        .footer__social__item__cta__icon:hover, .footer__social__item__cta__icon:focus {
+          color: #F6E9E9;
+          transform: rotate(360deg); }
+      .footer__social__item:last-of-type {
+        padding-right: 0; }

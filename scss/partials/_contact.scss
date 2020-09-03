@@ -1,6 +1,8 @@
 .contact {
     padding: 2em 2em;
     font-family: $ff-main;
+    z-index:5;
+    position: relative;
 
     &__container {
         margin-bottom: 1.5em;
@@ -43,4 +45,8 @@
             border: 1px solid #000;
         }
     }
+}
+
+.fab {
+    font-size: 30px;
 }
