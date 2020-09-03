@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&family=Roboto:ital,wght@0,300;0,400;0,700;1,400;1,900&display=swap');
 
 $ff-logo: 'Grand Hotel', cursive;
-$ff-heading: 'Roboto', sans-serif;
+$ff-main: 'Roboto', sans-serif;
 
 h1 {
-    font-family: $ff-heading;
+    font-family: $ff-main;
     text-transform: uppercase;
     font-weight: 700;
     font-size: 3rem;
