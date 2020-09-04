@@ -79,7 +79,7 @@ body {
           padding-right: 1em; }
           @media (min-width: 768px) {
             .header__container__nav__menu__item {
-              padding-right: 2.75em; } }
+              padding-right: 2.6em; } }
           .header__container__nav__menu__item:last-of-type {
             padding-right: 0; }
           .header__container__nav__menu__item__link {
@@ -102,18 +102,27 @@ body {
   background-color: #F6E9E9;
   padding: 2.5em;
   font-family: "Roboto", sans-serif; }
-  .intro__title {
+  @media (min-width: 768px) {
+    .intro__container {
+      max-width: 430px;
+      margin: 0 auto;
+      padding-bottom: 0.5em; } }
+  .intro__container__title {
     font-size: 3rem;
     text-transform: lowercase;
     font-weight: 700;
     padding: 0;
     margin-bottom: 0.5em;
     letter-spacing: -0.1rem; }
-  .intro p {
+  .intro__container p {
     font-size: 1.5rem;
     font-weight: 300;
     margin-bottom: 0.5em; }
-    .intro p:last-of-type {
+    @media (min-width: 768px) {
+      .intro__container p {
+        margin-bottom: 1em;
+        line-height: 1.25; } }
+    .intro__container p:last-of-type {
       margin-bottom: 0; }
 
 .projects {

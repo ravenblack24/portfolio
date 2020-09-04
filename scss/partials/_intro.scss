@@ -3,22 +3,35 @@
     padding: 2.5em;
     font-family: $ff-main;
 
-    &__title {
-        font-size: 3rem;
-        text-transform: lowercase;
-        font-weight: 700;
-        padding:0;
-        margin-bottom: 0.5em;
-        letter-spacing: -0.1rem;
-    }
+    &__container {
+        @media(min-width: 768px) {
+            max-width: 430px;
+            margin: 0 auto;
+            padding-bottom: 0.5em;
+        }
+    
+        &__title {
+            font-size: 3rem;
+            text-transform: lowercase;
+            font-weight: 700;
+            padding:0;
+            margin-bottom: 0.5em;
+            letter-spacing: -0.1rem;
+        }
+    
+        p {
+            font-size: 1.5rem;
+            font-weight: 300;
+            margin-bottom: 0.5em;
 
-    p {
-        font-size: 1.5rem;
-        font-weight: 300;
-        margin-bottom: 0.5em;
-
-        &:last-of-type {
-            margin-bottom:0;
+            @media(min-width: 768px) {
+                margin-bottom: 1em;
+                line-height: 1.25;
+            }
+    
+            &:last-of-type {
+                margin-bottom:0;
+            }
         }
     }
 }
