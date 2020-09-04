@@ -6,15 +6,18 @@
 
     @media(min-width: 768px) {
         padding-top: 4em;
-        // padding-bottom: 4em;
     }
 
     &__container {
         margin-bottom: 1.5em;
 
         @media(min-width: 768px) {
-            width: 415px;
+            max-width: 415px;
             margin: 0 auto;
+        }
+
+        @media(min-width: 1024px) {
+            max-width: 608px;
         }
 
         &__title,
@@ -24,6 +27,10 @@
             font-weight: 300;
             line-height: 1;
             letter-spacing: -0.1rem;
+
+            @media(min-width: 1024px) {
+                font-size: 4rem;
+            }
         }
 
         &__intro {
@@ -33,14 +40,21 @@
 
     &__form {
         @media(min-width: 768px) {
-            width: 415px;
+            max-width: 415px;
             margin-top: 2em;
             margin-left: auto;
             margin-right: auto;
         }
 
+        @media(min-width: 1024px) {
+            max-width: 608px;
+        }
+
         &__label {
             display: block;
+            @media(min-width: 1024px) {
+                font-size: 1.5rem;
+            }
         }
 
         &__field {

@@ -9,6 +9,10 @@
             margin: 0 auto;
             padding-bottom: 0.5em;
         }
+
+        @media(min-width: 1024px) {
+            max-width: 608px;
+        }
     
         &__title {
             font-size: 3rem;
@@ -17,6 +21,10 @@
             padding:0;
             margin-bottom: 0.5em;
             letter-spacing: -0.1rem;
+
+            @media(min-width: 1024px) {
+                font-size: 4rem;
+            }
         }
     
         p {
@@ -27,6 +35,10 @@
             @media(min-width: 768px) {
                 margin-bottom: 1em;
                 line-height: 1.25;
+            }
+
+            @media(min-width: 1024px) {
+                font-size: 2.25rem;
             }
     
             &:last-of-type {

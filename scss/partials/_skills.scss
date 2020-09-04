@@ -1,5 +1,5 @@
 .skills {
-    padding: 1.5em 1em;
+    padding: 1.5em 1em 4em;
     font-family: $ff-main;
     background-image: url(../../images/birds.png);
     background-size: cover;
@@ -14,8 +14,12 @@
     &__container {
 
         @media(min-width: 768px) {
-            width: 415px;
+            max-width: 415px;
             margin: 0 auto;
+        }
+
+        @media(min-width: 1024px) {
+            max-width: 608px;
         }
     
         &__title {
@@ -23,14 +27,16 @@
             text-transform: lowercase;
             font-weight: 300;
             padding:0;
-            margin-bottom: 0.5em;
-            
+            margin-bottom: 0.5em;  
             letter-spacing: -0.1rem;
             line-height: 1;
 
+            @media(min-width: 1024px) {
+                font-size: 4rem;
+            }
+
             &__bold {
-                font-weight: 700;
-                font-size: 3rem;
+                font-weight: 700;  
             }
         }
 
@@ -43,6 +49,11 @@
                 margin-bottom: 1em;
                 line-height: 1.25;
                 font-size: 1.5rem;
+            }
+
+            @media(min-width: 1024px) {
+                font-size: 2.25rem;
+                margin-bottom: 2em;
             }
         }
 
@@ -68,6 +79,10 @@
                     font-size: 1.5rem; 
                     border-bottom: 5px solid;
                     margin-bottom: 0.5em;
+
+                    @media(min-width: 1024px) {
+                        font-size: 2.25rem;
+                    }
                 }
 
                 @for $i from 1 through 5 {

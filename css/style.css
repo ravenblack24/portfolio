@@ -6,7 +6,7 @@ h1 {
   font-size: 3rem;
   text-align: right;
   line-height: 0.8; }
-  @media (min-width: 768px) {
+  @media (min-width: 1024px) {
     h1 {
       font-size: 4rem; } }
 
@@ -24,9 +24,6 @@ body {
   background-color: #000000;
   color: #ffffff;
   box-shadow: 5px 5px 5px 2px #ccc; }
-  @media (min-width: 768px) {
-    .header {
-      height: 453px; } }
   .header__container {
     margin: 0 auto;
     max-width: 323px; }
@@ -41,7 +38,7 @@ body {
         width: 116px;
         height: 116px;
         border-radius: 50%; }
-        @media (min-width: 768px) {
+        @media (min-width: 1024px) {
           .header__container__logo__circle {
             width: 138px;
             height: 138px; } }
@@ -51,7 +48,7 @@ body {
         color: #000000;
         padding-top: 0.2em;
         padding-left: 0.4em; }
-        @media (min-width: 768px) {
+        @media (min-width: 1024px) {
           .header__container__logo__initials {
             font-size: 4.5rem;
             padding-top: 0.25em;
@@ -67,7 +64,7 @@ body {
       text-align: center; }
       @media (min-width: 768px) {
         .header__container__nav {
-          padding-top: 3.75em;
+          padding-top: 2.75em;
           width: 100%; } }
       .header__container__nav__menu {
         padding: 0;
@@ -88,6 +85,9 @@ body {
             font-size: 0.875rem; }
             @media (min-width: 768px) {
               .header__container__nav__menu__item__link {
+                font-size: 1.25rem; } }
+            @media (min-width: 1024px) {
+              .header__container__nav__menu__item__link {
                 font-size: 1.5rem; } }
             .header__container__nav__menu__item__link:hover, .header__container__nav__menu__item__link:focus {
               text-transform: uppercase;
@@ -107,6 +107,9 @@ body {
       max-width: 430px;
       margin: 0 auto;
       padding-bottom: 0.5em; } }
+  @media (min-width: 1024px) {
+    .intro__container {
+      max-width: 608px; } }
   .intro__container__title {
     font-size: 3rem;
     text-transform: lowercase;
@@ -114,6 +117,9 @@ body {
     padding: 0;
     margin-bottom: 0.5em;
     letter-spacing: -0.1rem; }
+    @media (min-width: 1024px) {
+      .intro__container__title {
+        font-size: 4rem; } }
   .intro__container p {
     font-size: 1.5rem;
     font-weight: 300;
@@ -122,6 +128,9 @@ body {
       .intro__container p {
         margin-bottom: 1em;
         line-height: 1.25; } }
+    @media (min-width: 1024px) {
+      .intro__container p {
+        font-size: 2.25rem; } }
     .intro__container p:last-of-type {
       margin-bottom: 0; }
 
@@ -132,9 +141,9 @@ body {
     .projects {
       padding-top: 3em;
       padding-bottom: 4em; } }
-  @media (min-width: 768px) {
+  @media (min-width: 1024px) {
     .projects__container {
-      width: 644px;
+      max-width: 1120px;
       margin: 0 auto; } }
   .projects__container__intro {
     display: flex;
@@ -143,8 +152,11 @@ body {
     margin-bottom: 0.75em; }
     @media (min-width: 768px) {
       .projects__container__intro {
-        width: 415px;
+        max-width: 415px;
         margin: 0 auto; } }
+    @media (min-width: 1024px) {
+      .projects__container__intro {
+        max-width: 608px; } }
     .projects__container__intro__title {
       font-size: 3rem;
       text-transform: lowercase;
@@ -152,15 +164,20 @@ body {
       padding: 0;
       letter-spacing: -0.1rem;
       line-height: 0.85; }
+      @media (min-width: 1024px) {
+        .projects__container__intro__title {
+          font-size: 4rem; } }
       .projects__container__intro__title__bold {
-        font-weight: 700;
-        font-size: 3rem; }
+        font-weight: 700; }
     .projects__container__intro__filter {
       font-style: italic;
       text-align: right;
       font-size: 1.125rem;
       letter-spacing: -0.05rem;
       align-self: flex-end; }
+      @media (min-width: 1024px) {
+        .projects__container__intro__filter {
+          font-size: 1.875rem; } }
       .projects__container__intro__filter .fas {
         font-size: 0.8rem;
         padding: 0 0.5em; }
@@ -181,6 +198,9 @@ body {
     @media (min-width: 768px) {
       .projects__container__list__project {
         flex: 1 0 45%; } }
+    @media (min-width: 1024px) {
+      .projects__container__list__project {
+        flex: 1 0 33%; } }
     .projects__container__list__project--clock {
       background-image: url(../../images/portfolio-clock.png); }
     .projects__container__list__project--calculator {
@@ -193,7 +213,7 @@ body {
       background-image: url(../../images/portfolio-quote.png); }
 
 .skills {
-  padding: 1.5em 1em;
+  padding: 1.5em 1em 4em;
   font-family: "Roboto", sans-serif;
   background-image: url(../../images/birds.png);
   background-size: cover;
@@ -205,8 +225,11 @@ body {
       padding-bottom: 5em; } }
   @media (min-width: 768px) {
     .skills__container {
-      width: 415px;
+      max-width: 415px;
       margin: 0 auto; } }
+  @media (min-width: 1024px) {
+    .skills__container {
+      max-width: 608px; } }
   .skills__container__title {
     font-size: 3rem;
     text-transform: lowercase;
@@ -215,9 +238,11 @@ body {
     margin-bottom: 0.5em;
     letter-spacing: -0.1rem;
     line-height: 1; }
+    @media (min-width: 1024px) {
+      .skills__container__title {
+        font-size: 4rem; } }
     .skills__container__title__bold {
-      font-weight: 700;
-      font-size: 3rem; }
+      font-weight: 700; }
   .skills__container p {
     font-size: 1.125rem;
     font-weight: 300;
@@ -227,6 +252,10 @@ body {
         margin-bottom: 1em;
         line-height: 1.25;
         font-size: 1.5rem; } }
+    @media (min-width: 1024px) {
+      .skills__container p {
+        font-size: 2.25rem;
+        margin-bottom: 2em; } }
   .skills__container__list {
     margin-top: 1.5em;
     display: flex;
@@ -246,6 +275,9 @@ body {
         font-size: 1.5rem;
         border-bottom: 5px solid;
         margin-bottom: 0.5em; }
+        @media (min-width: 1024px) {
+          .skills__container__list__col__item {
+            font-size: 2.25rem; } }
       .skills__container__list__col li.item-1 {
         border-color: #262626; }
       .skills__container__list__col li.item-2 {
@@ -269,24 +301,36 @@ body {
     margin-bottom: 1.5em; }
     @media (min-width: 768px) {
       .contact__container {
-        width: 415px;
+        max-width: 415px;
         margin: 0 auto; } }
+    @media (min-width: 1024px) {
+      .contact__container {
+        max-width: 608px; } }
     .contact__container__title, .contact__container__intro {
       font-size: 3rem;
       text-transform: lowercase;
       font-weight: 300;
       line-height: 1;
       letter-spacing: -0.1rem; }
+      @media (min-width: 1024px) {
+        .contact__container__title, .contact__container__intro {
+          font-size: 4rem; } }
     .contact__container__intro {
       font-weight: 700; }
   @media (min-width: 768px) {
     .contact__form {
-      width: 415px;
+      max-width: 415px;
       margin-top: 2em;
       margin-left: auto;
       margin-right: auto; } }
+  @media (min-width: 1024px) {
+    .contact__form {
+      max-width: 608px; } }
   .contact__form__label {
     display: block; }
+    @media (min-width: 1024px) {
+      .contact__form__label {
+        font-size: 1.5rem; } }
   .contact__form__field {
     height: 2.25em;
     width: 100%;

@@ -9,8 +9,8 @@
 
     &__container {
 
-        @media(min-width: 768px) {
-            width: 644px;
+        @media(min-width: 1024px) {
+            max-width: 1120px;
             margin: 0 auto;
         }
 
@@ -21,8 +21,12 @@
             margin-bottom: 0.75em;
 
             @media(min-width: 768px) {
-                width: 415px;
+                max-width: 415px;
                 margin: 0 auto;
+            }
+
+            @media(min-width: 1024px) {
+                max-width: 608px;
             }
         
             &__title {
@@ -34,9 +38,12 @@
                 letter-spacing: -0.1rem;
                 line-height: 0.85;
 
+                @media(min-width: 1024px) {
+                    font-size: 4rem;
+                }
+
                 &__bold {
                     font-weight: 700;
-                    font-size: 3rem;
                 }
             }
 
@@ -46,6 +53,10 @@
                 font-size: 1.125rem;
                 letter-spacing: -0.05rem;
                 align-self: flex-end;   
+
+                @media(min-width: 1024px) {
+                    font-size: 1.875rem;
+                }
 
                 & .fas {
                     font-size: 0.8rem;
@@ -74,6 +85,11 @@
 
                 @media(min-width: 768px) {
                     flex: 1 0 45%;
+                }
+
+                @media(min-width: 1024px) {
+                    flex: 1 0 33%;
+                    
                 }
             
                 &--clock {
