@@ -84,28 +84,49 @@ body {
 
 .projects {
   padding: 1.5em 1em;
+  padding-bottom: 0;
   font-family: "Roboto", sans-serif; }
-  .projects__container {
+  .projects__intro {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 0.5em; }
-    .projects__container__title {
+    margin-bottom: 0.75em; }
+    .projects__intro__title {
       font-size: 3rem;
       text-transform: lowercase;
       font-weight: 300;
       padding: 0;
       letter-spacing: -0.1rem;
       line-height: 0.85; }
-      .projects__container__title__bold {
+      .projects__intro__title__bold {
         font-weight: 700;
         font-size: 3rem; }
-    .projects__container__filter {
+    .projects__intro__filter {
       font-style: italic;
       text-align: right;
       font-size: 1.125rem;
       letter-spacing: -0.05rem;
       align-self: flex-end; }
+      .projects__intro__filter .fas {
+        font-size: 0.8rem;
+        padding: 0 0.5em; }
+  .projects__container__project {
+    width: 100%;
+    height: 289px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative; }
+    .projects__container__project--clock {
+      background-image: url(../../images/portfolio-clock.png); }
+    .projects__container__project--calculator {
+      background-image: url(../../images/portfolio-calc.png); }
+    .projects__container__project--drum {
+      background-image: url(../../images/portfolio-drum.jpg); }
+    .projects__container__project--markdown {
+      background-image: url(../../images/portfolio-markdown.png); }
+    .projects__container__project--quote {
+      background-image: url(../../images/portfolio-quote.png); }
 
 .skills {
   padding: 1.5em 1em;
@@ -167,6 +188,8 @@ body {
       letter-spacing: -0.1rem; }
     .contact__container__intro {
       font-weight: 700; }
+  .contact__form__label {
+    display: block; }
   .contact__form__field {
     height: 2.25em;
     width: 100%;

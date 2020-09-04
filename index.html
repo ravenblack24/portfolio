@@ -32,18 +32,16 @@
         <p>I like making things for the web.  This is my portfolio site to show some of the things I have made.</p> 
     </section>
     <section class="projects">
+        <div class="projects__intro">
+            <h2 class="projects__intro__title">my <br /><span class="projects__intro__title__bold">projects.</span></h2>
+            <p class="projects__intro__filter">Filter <i class="fas fa-chevron-down"></i></p>
+        </div>
         <div class="projects__container">
-            <h2 class="projects__container__title">my <br /><span class="projects__container__title__bold">projects.</span></h2>
-            <p class="projects__container__filter">Filter</p>
-        </div>
-        <div class="projects__project">
-            
-        </div>
-        <div class="projects__project">
-            
-        </div>
-        <div class="projects__project">
-            
+            <a href="#"><div class="projects__container__project projects__container__project--clock"></div></a>
+            <a href="#"><div class="projects__container__project projects__container__project--calculator"></div></a>
+            <a href="#"><div class="projects__container__project projects__container__project--drum"></div></a>
+            <a href=""><div class="projects__container__project projects__container__project--markdown"></div></a>
+            <a href="#"><div class="projects__container__project projects__container__project--quote"></div></a>
         </div>
     </section>
     <section class="skills">
@@ -71,18 +69,16 @@
             <p class="contact__container__intro">get in touch.</p>
         </div>
         <form action="" class="contact__form">
-            <label for="name">name</label><br />
-            <input type="text" name="name" id="name" class="contact__form__field"/> <br />
-            <label for="email">email</label><br />
-            <input type="text" name="email" id="email" class="contact__form__field" /><br />
-            <label for="message">your message</label><br />
+            <label for="name" class="contact__form__label">name</label>
+            <input type="text" name="name" id="name" class="contact__form__field"/> 
+            <label for="email" class="contact__form__label">email</label>
+            <input type="text" name="email" id="email" class="contact__form__field" />
+            <label for="message" class="contact__form__label">your message</label>
             <textarea type="textarea" name="message" id="message"  class="contact__form__textarea" rows="9"></textarea> 
             <button class="contact__form__cta" type="submit">submit</button>
         </form>
     </section>
-  
-
-    <section class="footer">
+    <footer class="footer">
         
         <ul class="footer__social">
             <li class="footer__social__item">
@@ -95,7 +91,6 @@
                  <a href="#" class="footer__social__item__cta"><i class="fas fa-code footer__social__item__cta__icon"></i></a> 
              </li> 
         </ul> 
-    </section>
-    
+    </footer>
 </body>
 </html>

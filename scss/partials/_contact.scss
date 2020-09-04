@@ -23,6 +23,10 @@
 
     &__form {
 
+        &__label {
+            display: block;
+        }
+
         &__field {
             height: 2.25em;
             width: 100%;
