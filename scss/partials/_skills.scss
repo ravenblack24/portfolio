@@ -1,6 +1,15 @@
 .skills {
     padding: 1.5em 1em;
     font-family: $ff-main;
+    background-image: url(../../images/birds.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    @media(min-width: 768px) {
+        padding-top: 3em;
+        padding-bottom: 5em;
+    }
 
     &__container {
 

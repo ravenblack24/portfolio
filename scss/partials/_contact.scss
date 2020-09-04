@@ -4,6 +4,11 @@
     z-index:5;
     position: relative;
 
+    @media(min-width: 768px) {
+        padding-top: 4em;
+        // padding-bottom: 4em;
+    }
+
     &__container {
         margin-bottom: 1.5em;
 

@@ -126,9 +126,12 @@ body {
       margin-bottom: 0; }
 
 .projects {
-  padding: 1.5em 1em;
-  padding-bottom: 0;
+  padding: 1.5em 1em 2em;
   font-family: "Roboto", sans-serif; }
+  @media (min-width: 768px) {
+    .projects {
+      padding-top: 3em;
+      padding-bottom: 4em; } }
   @media (min-width: 768px) {
     .projects__container {
       width: 644px;
@@ -161,6 +164,12 @@ body {
       .projects__container__intro__filter .fas {
         font-size: 0.8rem;
         padding: 0 0.5em; }
+  @media (min-width: 768px) {
+    .projects__container__list {
+      margin-top: 1em;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap; } }
   .projects__container__list__project {
     display: block;
     background-image: url(../../images/portfolio-clock.png);
@@ -169,6 +178,9 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat; }
+    @media (min-width: 768px) {
+      .projects__container__list__project {
+        flex: 1 0 45%; } }
     .projects__container__list__project--clock {
       background-image: url(../../images/portfolio-clock.png); }
     .projects__container__list__project--calculator {
@@ -182,7 +194,15 @@ body {
 
 .skills {
   padding: 1.5em 1em;
-  font-family: "Roboto", sans-serif; }
+  font-family: "Roboto", sans-serif;
+  background-image: url(../../images/birds.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+  @media (min-width: 768px) {
+    .skills {
+      padding-top: 3em;
+      padding-bottom: 5em; } }
   @media (min-width: 768px) {
     .skills__container {
       width: 415px;
@@ -242,6 +262,9 @@ body {
   font-family: "Roboto", sans-serif;
   z-index: 5;
   position: relative; }
+  @media (min-width: 768px) {
+    .contact {
+      padding-top: 4em; } }
   .contact__container {
     margin-bottom: 1.5em; }
     @media (min-width: 768px) {
