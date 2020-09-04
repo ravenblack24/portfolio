@@ -3,69 +3,86 @@
     padding-bottom: 0;
     font-family: $ff-main;
 
-    &__intro {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        margin-bottom: 0.75em;
-    
-        &__title {
-            font-size: 3rem;
-            text-transform: lowercase;
-            font-weight: 300;
-            padding:0;
-            
-            letter-spacing: -0.1rem;
-            line-height: 0.85;
-
-            &__bold {
-                font-weight: 700;
-                font-size: 3rem;
-            }
-        }
-
-        &__filter {
-            font-style: italic;
-            text-align: right;
-            font-size: 1.125rem;
-            letter-spacing: -0.05rem;
-            align-self: flex-end;   
-
-            & .fas {
-                font-size: 0.8rem;
-                padding: 0 0.5em;
-            }
-        }
-    }
-
     &__container {
 
-        &__project {
-            width: 100%;
-            height: 289px;
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            position: relative;
-         
-            &--clock {
+        @media(min-width: 768px) {
+            width: 644px;
+            margin: 0 auto;
+        }
+
+        &__intro {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-bottom: 0.75em;
+
+            @media(min-width: 768px) {
+                width: 415px;
+                margin: 0 auto;
+            }
+        
+            &__title {
+                font-size: 3rem;
+                text-transform: lowercase;
+                font-weight: 300;
+                padding:0;
+                
+                letter-spacing: -0.1rem;
+                line-height: 0.85;
+
+                &__bold {
+                    font-weight: 700;
+                    font-size: 3rem;
+                }
+            }
+
+            &__filter {
+                font-style: italic;
+                text-align: right;
+                font-size: 1.125rem;
+                letter-spacing: -0.05rem;
+                align-self: flex-end;   
+
+                & .fas {
+                    font-size: 0.8rem;
+                    padding: 0 0.5em;
+                }
+            }
+        }
+
+        &__list {
+
+            // display: flex;
+            // flex-direction: column;
+
+            &__project {
+               display: block;
                 background-image: url(../../images/portfolio-clock.png); 
-            }
+                max-width: 100%;
+                height: 287px;
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+            
+                &--clock {
+                    background-image: url(../../images/portfolio-clock.png); 
+                }
 
-            &--calculator {
-                background-image: url(../../images/portfolio-calc.png); 
-            }
+                &--calculator {
+                    background-image: url(../../images/portfolio-calc.png); 
+                }
 
-            &--drum {
-                background-image: url(../../images/portfolio-drum.jpg); 
-            }
+                &--drum {
+                    background-image: url(../../images/portfolio-drum.jpg); 
+                }
 
-            &--markdown {
-                background-image: url(../../images/portfolio-markdown.png); 
-            }
+                &--markdown {
+                    background-image: url(../../images/portfolio-markdown.png); 
+                }
 
-            &--quote {
-                background-image: url(../../images/portfolio-quote.png); 
+                &--quote {
+                    background-image: url(../../images/portfolio-quote.png); 
+                }
             }
         }
     }

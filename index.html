@@ -34,35 +34,39 @@
         </div>
     </section>
     <section class="projects">
-        <div class="projects__intro">
-            <h2 class="projects__intro__title">my <br /><span class="projects__intro__title__bold">projects.</span></h2>
-            <p class="projects__intro__filter">Filter <i class="fas fa-chevron-down"></i></p>
-        </div>
         <div class="projects__container">
-            <a href="#"><div class="projects__container__project projects__container__project--clock"></div></a>
-            <a href="#"><div class="projects__container__project projects__container__project--calculator"></div></a>
-            <a href="#"><div class="projects__container__project projects__container__project--drum"></div></a>
-            <a href=""><div class="projects__container__project projects__container__project--markdown"></div></a>
-            <a href="#"><div class="projects__container__project projects__container__project--quote"></div></a>
+            <div class="projects__container__intro">
+                <h2 class="projects__container__intro__title">my <br /><span class="projects__container__intro__title__bold">projects.</span></h2>
+                <p class="projects__container__intro__filter">Filter <i class="fas fa-chevron-down"></i></p>
+            </div>
+            <div class="projects__container__list">
+                <a href="#" class="projects__container__list__project projects__container__list__project--clock"></a>
+                <a href="#" class="projects__container__list__project projects__container__list__project--calculator"></a>
+                <a href="#" class="projects__container__list__project projects__container__list__project--drum"></a>
+                <a href="" class="projects__container__list__project projects__container__list__project--markdown"></a>
+                <a href="#" class="projects__container__list__project projects__container__list__project--quote"></a>
+            </div>
         </div>
     </section>
     <section class="skills">
-        <h2 class="skills__title">My <br /><span class="skills__title__bold">skills.</span></h2>
-        <p>Proin id libero eget massa sodales gravida. Nunc scelerisque ante quis mi commodo, in scelerisque quam finibus.</p>
-        <div class="skills__list">
-            <ul class="skills__list__col">
-                <li class="skills__list__col__item item-1">javascript</li>
-                <li class="skills__list__col__item item-2">html</li>
-                <li class="skills__list__col__item item-3">css</li>
-                <li class="skills__list__col__item item-4">sass</li>
-                <li class="skills__list__col__item item-5">reactjs</li>
-            </ul>
-            <ul class="skills__list__col">
-                <li class="skills__list__col__item item-1">wordpress</li>
-                <li class="skills__list__col__item item-2">UI/UX</li>
-                <li class="skills__list__col__item item-3">figma</li>
-                <li class="skills__list__col__item item-4">photoshop</li>
-            </ul>
+        <div class="skills__container">
+            <h2 class="skills__container__title">My <br /><span class="skills__container__title__bold">skills.</span></h2>
+            <p>Proin id libero eget massa sodales gravida. Nunc scelerisque ante quis mi commodo, in scelerisque quam finibus.</p>
+            <div class="skills__container__list">
+                <ul class="skills__container__list__col">
+                    <li class="skills__container__list__col__item item-1">javascript</li>
+                    <li class="skills__container__list__col__item item-2">html</li>
+                    <li class="skills__container__list__col__item item-3">css</li>
+                    <li class="skills__container__list__col__item item-4">sass</li>
+                    <li class="skills__container__list__col__item item-5">reactjs</li>
+                </ul>
+                <ul class="skills__container__list__col">
+                    <li class="skills__container__list__col__item item-1">wordpress</li>
+                    <li class="skills__container__list__col__item item-2">UI/UX</li>
+                    <li class="skills__container__list__col__item item-3">figma</li>
+                    <li class="skills__container__list__col__item item-4">photoshop</li>
+                </ul>
+            </div>
         </div>
     </section>
     <section class="contact">
@@ -77,11 +81,10 @@
             <input type="text" name="email" id="email" class="contact__form__field" />
             <label for="message" class="contact__form__label">your message</label>
             <textarea type="textarea" name="message" id="message"  class="contact__form__textarea" rows="9"></textarea> 
-            <button class="contact__form__cta" type="submit">submit</button>
+            <button class="contact__form__cta" type="submit">send</button>
         </form>
     </section>
-    <footer class="footer">
-        
+    <footer class="footer">  
         <ul class="footer__social">
             <li class="footer__social__item">
                 <a href="#" class="footer__social__item__cta"><i class="fab fa-github footer__social__item__cta__icon" ></i></a> 

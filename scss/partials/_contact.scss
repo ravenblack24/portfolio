@@ -7,6 +7,11 @@
     &__container {
         margin-bottom: 1.5em;
 
+        @media(min-width: 768px) {
+            width: 415px;
+            margin: 0 auto;
+        }
+
         &__title,
         &__intro {
             font-size: 3rem;
@@ -22,6 +27,12 @@
     }
 
     &__form {
+        @media(min-width: 768px) {
+            width: 415px;
+            margin-top: 2em;
+            margin-left: auto;
+            margin-right: auto;
+        }
 
         &__label {
             display: block;
@@ -31,11 +42,19 @@
             height: 2.25em;
             width: 100%;
             margin-bottom: 1em;
+
+            @media(min-width: 768px) {
+                height: 3em;
+            }
         }
 
         &__textarea {
             width: 100%;
             margin-bottom: 0.75em;
+
+            @media(min-width: 768px) {
+                margin-bottom: 1em;
+            }
         }
 
         &__cta {
@@ -47,6 +66,13 @@
             margin: 0 auto;
             display: block;
             border: 1px solid #000;
+            font-style: italic;
+
+            @media(min-width: 768px) {
+                height: 2em;
+                width: 50%;
+                font-size: 1.5rem;
+            }
         }
     }
 }
