@@ -6,6 +6,9 @@ h1 {
   font-size: 3rem;
   text-align: right;
   line-height: 0.8; }
+  @media (min-width: 768px) {
+    h1 {
+      font-size: 4rem; } }
 
 * {
   box-sizing: border-box;
@@ -21,9 +24,16 @@ body {
   background-color: #000000;
   color: #ffffff;
   box-shadow: 5px 5px 5px 2px #ccc; }
+  @media (min-width: 768px) {
+    .header {
+      height: 453px; } }
   .header__container {
     margin: 0 auto;
     max-width: 323px; }
+    @media (min-width: 768px) {
+      .header__container {
+        max-width: 440px;
+        padding-top: 3em; } }
     .header__container__logo {
       padding: 2em 0 0 1em; }
       .header__container__logo__circle {
@@ -31,11 +41,21 @@ body {
         width: 116px;
         height: 116px;
         border-radius: 50%; }
+        @media (min-width: 768px) {
+          .header__container__logo__circle {
+            width: 138px;
+            height: 138px; } }
       .header__container__logo__initials {
         font-family: "Grand Hotel", cursive;
         font-size: 4rem;
         color: #000000;
-        padding: 0.2em 0 0 0.4em; }
+        padding-top: 0.2em;
+        padding-left: 0.4em; }
+        @media (min-width: 768px) {
+          .header__container__logo__initials {
+            font-size: 4.5rem;
+            padding-top: 0.25em;
+            padding-left: 0.45em; } }
     .header__container__intro {
       margin-top: -1.75em;
       padding-right: 1.25em;
@@ -45,6 +65,10 @@ body {
       padding: 1.75em 0 0.75em;
       margin: 0 auto;
       text-align: center; }
+      @media (min-width: 768px) {
+        .header__container__nav {
+          padding-top: 3.75em;
+          width: 100%; } }
       .header__container__nav__menu {
         padding: 0;
         margin: 0; }
@@ -53,16 +77,26 @@ body {
           font-family: "Roboto", sans-serif;
           text-transform: lowercase;
           padding-right: 1em; }
+          @media (min-width: 768px) {
+            .header__container__nav__menu__item {
+              padding-right: 2.75em; } }
           .header__container__nav__menu__item:last-of-type {
             padding-right: 0; }
           .header__container__nav__menu__item__link {
             text-decoration: none;
             color: #ffffff;
             font-size: 0.875rem; }
+            @media (min-width: 768px) {
+              .header__container__nav__menu__item__link {
+                font-size: 1.5rem; } }
             .header__container__nav__menu__item__link:hover, .header__container__nav__menu__item__link:focus {
               text-transform: uppercase;
               border-top: 1px solid #ffffff;
               padding-top: 0.5em; }
+              @media (min-width: 768px) {
+                .header__container__nav__menu__item__link:hover, .header__container__nav__menu__item__link:focus {
+                  border-width: 3px;
+                  padding-top: 0.3em; } }
 
 .intro {
   background-color: #F6E9E9;
