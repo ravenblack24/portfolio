@@ -23,7 +23,9 @@ body {
 .header {
   background-color: #000000;
   color: #ffffff;
-  box-shadow: 5px 5px 5px 2px #ccc; }
+  box-shadow: 5px 5px 5px 2px #ccc;
+  position: relative;
+  z-index: 10; }
   .header__container {
     margin: 0 auto;
     max-width: 323px; }
@@ -110,7 +112,7 @@ body {
 
 .intro {
   background-color: #F6E9E9;
-  padding: 2.5em;
+  padding: 3em;
   font-family: "Roboto", sans-serif; }
   @media (min-width: 768px) {
     .intro__container {
@@ -348,12 +350,19 @@ body {
     @media (min-width: 768px) {
       .contact__form__field {
         height: 3em; } }
+    @media (min-width: 1024px) {
+      .contact__form__field {
+        height: 3.5em;
+        margin-bottom: 1.75em; } }
   .contact__form__textarea {
     width: 100%;
     margin-bottom: 0.75em; }
     @media (min-width: 768px) {
       .contact__form__textarea {
         margin-bottom: 1em; } }
+    @media (min-width: 768px) {
+      .contact__form__textarea {
+        margin-bottom: 1.75em; } }
   .contact__form__cta {
     width: 60%;
     height: 2.25em;
@@ -369,6 +378,9 @@ body {
         height: 2em;
         width: 50%;
         font-size: 1.5rem; } }
+    @media (min-width: 1024px) {
+      .contact__form__cta {
+        width: 40%; } }
 
 .fab {
   font-size: 30px; }
