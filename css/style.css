@@ -199,6 +199,36 @@ body {
       display: flex;
       flex-direction: row;
       flex-wrap: wrap; } }
+  .projects__container__list__cta {
+    position: relative;
+    display: block; }
+    .projects__container__list__cta:hover .projects__container__list__cta__container, .projects__container__list__cta:focus .projects__container__list__cta__container {
+      opacity: 1; }
+    .projects__container__list__cta img {
+      display: block;
+      max-width: 100%;
+      height: auto; }
+    .projects__container__list__cta__container {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 100%;
+      width: 100%;
+      opacity: 0;
+      transition: .5s ease;
+      background-color: #ccc; }
+      .projects__container__list__cta__container__intro {
+        color: white;
+        font-size: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center; }
   .projects__container__list__project {
     display: block;
     background-image: url(../../images/portfolio-clock.png);
