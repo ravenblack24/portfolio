@@ -202,13 +202,19 @@ body {
   .projects__container__list__cta {
     position: relative;
     display: block; }
-    .projects__container__list__cta:hover .projects__container__list__cta__container, .projects__container__list__cta:focus .projects__container__list__cta__container {
+    .projects__container__list__cta:hover .projects__container__list__cta__overlay, .projects__container__list__cta:focus .projects__container__list__cta__overlay {
       opacity: 1; }
+    @media (min-width: 768px) {
+      .projects__container__list__cta {
+        flex: 1 0 45%; } }
+    @media (min-width: 1024px) {
+      .projects__container__list__cta {
+        flex: 1 0 33%; } }
     .projects__container__list__cta img {
       display: block;
       max-width: 100%;
       height: auto; }
-    .projects__container__list__cta__container {
+    .projects__container__list__cta__overlay {
       position: absolute;
       top: 0;
       bottom: 0;
@@ -218,41 +224,22 @@ body {
       width: 100%;
       opacity: 0;
       transition: .5s ease;
-      background-color: #ccc; }
-      .projects__container__list__cta__container__intro {
-        color: white;
-        font-size: 20px;
+      background-color: #F6E9E9; }
+      .projects__container__list__cta__overlay__intro {
+        color: #000000;
+        font-size: 1.5rem;
+        font-weight: 300;
+        width: 90%;
         position: absolute;
         top: 50%;
         left: 50%;
         -webkit-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
-        text-align: center; }
-  .projects__container__list__project {
-    display: block;
-    background-image: url(../../images/portfolio-clock.png);
-    max-width: 100%;
-    height: 287px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat; }
-    @media (min-width: 768px) {
-      .projects__container__list__project {
-        flex: 1 0 45%; } }
-    @media (min-width: 1024px) {
-      .projects__container__list__project {
-        flex: 1 0 33%; } }
-    .projects__container__list__project--clock {
-      background-image: url(../../images/portfolio-clock.png); }
-    .projects__container__list__project--calculator {
-      background-image: url(../../images/portfolio-calc.png); }
-    .projects__container__list__project--drum {
-      background-image: url(../../images/portfolio-drum.jpg); }
-    .projects__container__list__project--markdown {
-      background-image: url(../../images/portfolio-markdown.png); }
-    .projects__container__list__project--quote {
-      background-image: url(../../images/portfolio-quote.png); }
+        text-align: center;
+        text-transform: lowercase; }
+        .projects__container__list__cta__overlay__intro__bold {
+          font-weight: 700; }
 
 .skills {
   padding: 1.5em 1em 4em;

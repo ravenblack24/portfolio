@@ -71,7 +71,7 @@
                 margin-top: 1em;
                 display: flex;
                 flex-direction: row;
-                flex-wrap:wrap;
+                flex-wrap: wrap;
             }
 
             &__cta {
@@ -80,18 +80,26 @@
 
                 &:hover,
                 &:focus {
-                    .projects__container__list__cta__container {
+                    .projects__container__list__cta__overlay {
                         opacity: 1;
                       }
                 }
 
+                @media(min-width: 768px) {
+                    flex: 1 0 45%;                    
+                }
+
+                @media(min-width: 1024px) {
+                    flex: 1 0 33%;                    
+                }
+                
                 & img {
                     display: block;
                     max-width: 100%;
                     height: auto;
                 }
 
-                &__container {
+                &__overlay {
                     position: absolute;
                     top: 0;
                     bottom: 0;
@@ -101,12 +109,14 @@
                     width: 100%;
                     opacity: 0;
                     transition: .5s ease;
-                    background-color: #ccc;
+                    background-color: #F6E9E9;
 
                     &__intro {
                         
-                        color: white;
-                        font-size: 20px;
+                        color: $black;
+                        font-size: 1.5rem;
+                        font-weight: 300;
+                        width: 90%;
                         position: absolute;
                         top: 50%;
                         left: 50%;
@@ -114,54 +124,20 @@
                         -ms-transform: translate(-50%, -50%);
                         transform: translate(-50%, -50%);
                         text-align: center;
-                    }
+                        text-transform: lowercase;
 
-                    
+                        &__bold {
+                            font-weight: 700;
+                        }
+                    }    
                 }
-
             }
-
-
-
 
            
             &__project {
-               display: block;
-                background-image: url(../../images/portfolio-clock.png); 
-                max-width: 100%;
-                height: 287px;
-                background-size: cover;
-                background-position: center;
-                background-repeat: no-repeat;
 
-                @media(min-width: 768px) {
-                    flex: 1 0 45%;
-          
-                }
 
-                @media(min-width: 1024px) {
-                    flex: 1 0 33%;                    
-                }
-            
-                &--clock {
-                    background-image: url(../../images/portfolio-clock.png); 
-                }
-
-                &--calculator {
-                    background-image: url(../../images/portfolio-calc.png); 
-                }
-
-                &--drum {
-                    background-image: url(../../images/portfolio-drum.jpg); 
-                }
-
-                &--markdown {
-                    background-image: url(../../images/portfolio-markdown.png); 
-                }
-
-                &--quote {
-                    background-image: url(../../images/portfolio-quote.png); 
-                }
+              
             }
         }
     }
