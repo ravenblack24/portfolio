@@ -237,9 +237,27 @@ body {
         -ms-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
         text-align: center;
-        text-transform: lowercase; }
+        text-transform: lowercase;
+        display: block; }
         .projects__container__list__cta__overlay__intro__bold {
-          font-weight: 700; }
+          font-weight: 700;
+          display: block;
+          margin-bottom: 0.25em; }
+        .projects__container__list__cta__overlay__intro__cta {
+          height: 2em;
+          background-color: black;
+          padding: 0.25em 0.5em;
+          margin: 0.75em auto 0;
+          text-decoration: none;
+          font-size: 0.75em;
+          color: white;
+          border: none; }
+          .projects__container__list__cta__overlay__intro__cta .fab,
+          .projects__container__list__cta__overlay__intro__cta .fas {
+            font-size: 1.25rem;
+            padding-right: 0.15em; }
+          .projects__container__list__cta__overlay__intro__cta:hover {
+            background: gray; }
 
 .skills {
   padding: 1.5em 1em 4em;

@@ -125,19 +125,41 @@
                         transform: translate(-50%, -50%);
                         text-align: center;
                         text-transform: lowercase;
+                        display: block;
+
 
                         &__bold {
                             font-weight: 700;
+                            display: block;
+                            margin-bottom: 0.25em;
                         }
+
+                        &__cta {
+                            height: 2em;
+                            background-color: black;
+                            padding: 0.25em 0.5em;
+                            margin: 0.75em auto 0;
+                            text-decoration: none;
+                            font-size: 0.75em;
+                            color: white;
+                            border: none;
+
+                            .fab,
+                            .fas {
+                                font-size: 1.25rem;
+                                padding-right: 0.15em;
+                            }
+
+                            &:hover {
+                                background: lighten(#000, 50%);
+                            }
+                            
+                        }
+
+                       
+
                     }    
                 }
-            }
-
-           
-            &__project {
-
-
-              
             }
         }
     }
