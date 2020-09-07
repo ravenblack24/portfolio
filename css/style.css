@@ -379,25 +379,28 @@ body {
       .contact__form__label {
         font-size: 1.5rem; } }
   .contact__form__field {
-    height: 2.25em;
+    font-size: 1.125rem;
+    padding: 0.25em;
     width: 100%;
-    margin-bottom: 1em; }
+    margin-bottom: 0.5em; }
     @media (min-width: 768px) {
       .contact__form__field {
-        height: 3em; } }
+        font-size: 1.5rem; } }
     @media (min-width: 1024px) {
       .contact__form__field {
-        height: 3.5em;
-        margin-bottom: 1.75em; } }
+        font-size: 1.75rem; } }
   .contact__form__textarea {
+    font-size: 1.125rem;
+    padding: 0.25em;
     width: 100%;
-    margin-bottom: 0.75em; }
+    margin-bottom: 0.5em;
+    font-family: "Roboto", sans-serif; }
     @media (min-width: 768px) {
       .contact__form__textarea {
-        margin-bottom: 1em; } }
-    @media (min-width: 768px) {
+        font-size: 1.5rem; } }
+    @media (min-width: 1024px) {
       .contact__form__textarea {
-        margin-bottom: 1.75em; } }
+        font-size: 1.75rem; } }
   .contact__form__cta {
     width: 60%;
     height: 2.25em;
@@ -422,12 +425,17 @@ body {
 
 .footer {
   background-color: #000;
-  margin-top: -9.5em;
-  padding: 10em 2em 2.25em 2em; }
+  margin-top: -11.5em;
+  padding: 11.5em 2em 2.25em 2em; }
   @media (min-width: 768px) {
     .footer {
-      margin-top: -11em;
-      padding-top: 12em;
+      margin-top: -14em;
+      padding-top: 14em;
+      padding-bottom: 4em; } }
+  @media (min-width: 1024px) {
+    .footer {
+      margin-top: -16em;
+      padding-top: 17em;
       padding-bottom: 4em; } }
   .footer__social {
     text-align: center;

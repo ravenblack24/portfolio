@@ -58,30 +58,33 @@
         }
 
         &__field {
-            height: 2.25em;
+            font-size: 1.125rem;
+            padding: 0.25em;
             width: 100%;
-            margin-bottom: 1em;
+            margin-bottom: 0.5em;
 
             @media(min-width: 768px) {
-                height: 3em;
+                font-size: 1.5rem;
             }
 
             @media(min-width: 1024px) {
-                height: 3.5em;
-                margin-bottom: 1.75em;
+                font-size: 1.75rem;
             }
         }
 
         &__textarea {
+            font-size: 1.125rem;
+            padding: 0.25em;
             width: 100%;
-            margin-bottom: 0.75em;
+            margin-bottom: 0.5em;
+            font-family: $ff-main;
 
             @media(min-width: 768px) {
-                margin-bottom: 1em;
+                font-size: 1.5rem;
             }
 
-            @media(min-width: 768px) {
-                margin-bottom: 1.75em;
+            @media(min-width: 1024px) {
+                font-size: 1.75rem;
             }
         }
 
