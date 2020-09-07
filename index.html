@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Front-end web developer - Milton Keynes</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" /> 
     <link rel="stylesheet" href="css/style.css" />
 </head>
@@ -35,7 +35,7 @@
     </section>
     <section class="projects">
         <div class="projects__container">
-            <div class="projects__container__intro" id="work">
+            <div class="projects__container__intro" id="work" data-section="#work">
                 <h2 class="projects__container__intro__title">my <br /><span class="projects__container__intro__title__bold">projects.</span></h2>
                 <!-- <p class="projects__container__intro__filter">Filter <i class="fas fa-chevron-down"></i></p> -->
             </div>
@@ -147,5 +147,24 @@
              </li> 
         </ul> 
     </footer>
+    <script>
+        window.addEventListener('DOMContentLoaded', (event) => {
+
+            const elements = document.getElementsByClassName("header__container__nav__menu__item__link");
+            
+            Array.from(elements).forEach(function(element) {
+                element.addEventListener('click', event => {
+                     event.preventDefault();
+                     const href = event.target.getAttribute("href").substring(1);
+                     const offsetTop = document.getElementById(href).offsetTop;
+
+                     window.scrollTo({
+                         top: offsetTop,
+                         behaviour: 'smooth'
+                    })
+                });
+            });
+        });
+    </script>
 </body>
 </html>
