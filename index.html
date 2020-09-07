@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-    <header class="header">
+    <header class="header" id="home">
         <div class="header__container">
             <div class="header__container__logo">
                 <div class="header__container__logo__circle">
@@ -18,10 +18,10 @@
             <div class="header__container__intro"><h1>Front<br/> end<br /> developer</h1></div>
             <nav class="header__container__nav">
                 <ul class="header__container__nav__menu">
-                    <li class="header__container__nav__menu__item"><a href="#" class="header__container__nav__menu__item__link">Home</a></li>
-                    <li class="header__container__nav__menu__item"><a href="#" class="header__container__nav__menu__item__link">work</a></li>
-                    <li class="header__container__nav__menu__item"><a href="#" class="header__container__nav__menu__item__link">about</a></li>
-                    <li class="header__container__nav__menu__item"><a href="#" class="header__container__nav__menu__item__link">contact</a></li>
+                    <li class="header__container__nav__menu__item"><a href="#home" class="header__container__nav__menu__item__link">Home</a></li>
+                    <li class="header__container__nav__menu__item"><a href="#work" class="header__container__nav__menu__item__link">work</a></li>
+                    <li class="header__container__nav__menu__item"><a href="#about" class="header__container__nav__menu__item__link">about</a></li>
+                    <li class="header__container__nav__menu__item"><a href="#contact" class="header__container__nav__menu__item__link">contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -35,9 +35,9 @@
     </section>
     <section class="projects">
         <div class="projects__container">
-            <div class="projects__container__intro">
+            <div class="projects__container__intro" id="work">
                 <h2 class="projects__container__intro__title">my <br /><span class="projects__container__intro__title__bold">projects.</span></h2>
-                <p class="projects__container__intro__filter">Filter <i class="fas fa-chevron-down"></i></p>
+                <!-- <p class="projects__container__intro__filter">Filter <i class="fas fa-chevron-down"></i></p> -->
             </div>
             <div class="projects__container__list">
                 <div class="projects__container__list__cta"> 
@@ -98,7 +98,7 @@
             </div>
         </div>
     </section>
-    <section class="skills">
+    <section class="skills" id="about">
         <div class="skills__container">
             <h2 class="skills__container__title">My <br /><span class="skills__container__title__bold">skills.</span></h2>
             <p>Proin id libero eget massa sodales gravida. Nunc scelerisque ante quis mi commodo, in scelerisque quam finibus.</p>
@@ -119,7 +119,7 @@
             </div>
         </div>
     </section>
-    <section class="contact">
+    <section class="contact" id="contact">
         <div class="contact__container">
             <h2 class="contact__container__title">Like what you see?</h2>
             <p class="contact__container__intro">get in touch.</p>

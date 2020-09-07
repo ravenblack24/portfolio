@@ -127,7 +127,6 @@
                         text-transform: lowercase;
                         display: block;
 
-
                         &__bold {
                             font-weight: 700;
                             display: block;
@@ -152,12 +151,8 @@
 
                             &:hover {
                                 background: lighten(#000, 50%);
-                            }
-                            
+                            } 
                         }
-
-                       
-
                     }    
                 }
             }
