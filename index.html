@@ -29,7 +29,7 @@
     <section class="intro">
         <div class="intro__container">
             <h2 class="intro__container__title">Hello there.</h2>
-            <p>I’m Kay, a front-end web developer based in Milton Keynes. </p>
+            <p>I’m Karen, a front-end web developer based in Milton Keynes. </p>
             <p>I like making things for the web.  This is my portfolio site to show some of the things I have made.</p> 
         </div>
     </section>
@@ -124,13 +124,14 @@
             <h2 class="contact__container__title">Like what you see?</h2>
             <p class="contact__container__intro">get in touch.</p>
         </div>
-        <form action="" class="contact__form">
+        <form action="https://usebasin.com/f/2258ec1c41af" class="contact__form">
             <label for="name" class="contact__form__label">name</label>
-            <input type="text" name="name" id="name" class="contact__form__field"/> 
+            <input type="text" name="name" id="name" class="contact__form__field" required/> 
             <label for="email" class="contact__form__label">email</label>
-            <input type="text" name="email" id="email" class="contact__form__field" />
+            <input type="email" name="email" id="email" class="contact__form__field"  required />
             <label for="message" class="contact__form__label">your message</label>
-            <textarea type="textarea" name="message" id="message"  class="contact__form__textarea" rows="8"></textarea> 
+            <textarea type="textarea" name="message" id="message"  class="contact__form__textarea" rows="8" required></textarea> 
+            <input type="hidden" name="down_with_bots"></input>
             <button class="contact__form__cta" type="submit">send</button>
         </form>
     </section>
@@ -151,12 +152,13 @@
         window.addEventListener('DOMContentLoaded', (event) => {
 
             const elements = document.getElementsByClassName("header__container__nav__menu__item__link");
-            
             Array.from(elements).forEach(function(element) {
                 element.addEventListener('click', event => {
                      event.preventDefault();
+                     
                      const href = event.target.getAttribute("href").substring(1);
                      const offsetTop = document.getElementById(href).offsetTop;
+
 
                      window.scrollTo({
                          top: offsetTop,
