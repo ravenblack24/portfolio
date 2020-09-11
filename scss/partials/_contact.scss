@@ -3,6 +3,7 @@
     font-family: $ff-main;
     z-index:5;
     position: relative;
+    
 
     @media(min-width: 768px) {
         padding-top: 4em;
@@ -10,6 +11,7 @@
 
     &__container {
         margin-bottom: 1.5em;
+    
 
         @media(min-width: 768px) {
             max-width: 415px;

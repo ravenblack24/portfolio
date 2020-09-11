@@ -1,0 +1,71 @@
+.thanks {
+    padding: 2em 2em;
+    font-family: $ff-main;
+    background-color: white;
+
+    @media(min-width: 768px) {
+        padding-top: 4em;
+    }
+
+    &__container {
+        margin-bottom: 1.5em;
+
+        @media(min-width: 768px) {
+            max-width: 415px;
+            margin: 0 auto;
+            min-height: 43vh;
+        }
+
+        @media(min-width: 1024px) {
+            max-width: 608px;
+        }
+
+        &__title,
+        &__intro {
+            font-size: 3rem;
+            text-transform: lowercase;
+            font-weight: 300;
+            line-height: 1;
+            letter-spacing: -0.1rem;
+
+            @media(min-width: 1024px) {
+                font-size: 4rem;
+            }
+        }
+
+        &__intro {
+            font-weight: 700;
+        }
+
+        &__cta {
+            display: block;
+            margin-top: 1em;
+            font-size: 1.125rem;
+            font-weight: 300;
+            text-decoration: none;
+            color: $black;
+            
+            @media(min-width: 768px) {
+                margin-bottom: 1em;
+                line-height: 1.25;
+                font-size: 1.5rem;
+            }
+
+            @media(min-width: 1024px) {
+                font-size: 2.25rem;
+                margin-bottom: 2em;
+            }
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        &__icon {
+            font-size: 15em;
+            margin-top: 0;
+            padding-top: 0;
+            line-height:1;
+        }
+    }
+}

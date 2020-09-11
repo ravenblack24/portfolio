@@ -15,6 +15,17 @@
         padding-bottom: 4em;
     }
 
+    &--thanks {
+        padding: 2em 0;
+        margin-top:0;
+
+        @media(min-width: 768px) {
+            margin-top: 0;
+            padding-top: 4em;
+            padding-bottom: 4em;
+        }
+    }
+
     &__social {
         text-align: center;   
         list-style-type: none;
