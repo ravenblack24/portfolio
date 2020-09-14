@@ -56,7 +56,7 @@
         }
 
         &__nav {
-            width: 90%;
+           // width: 90%;
             padding: 1.75em 0 0.75em;
             margin: 0 auto;
             text-align: center;
@@ -67,36 +67,32 @@
 
             @media(min-width: 1024px) {
                 padding-top: 2.75em;
-                width: 100%;
             }
 
             &__menu {
-                padding: 0;
-                margin: 0;
+                width:90%;
+                margin: 0 auto;
+                list-style-type: none;
+                display: grid;
+                grid-template-columns: repeat(4, minmax(0, 1fr));
+                font-size: 1.25rem;
+                
+
+                @media(min-width: 768px) {
+                    width: 100%;
+                    grid-gap: 5%;
+                }
 
                 &__item {
-                    display: inline;
-
                     font-family: $ff-main; 
-                    text-transform: lowercase;
-                    padding-right: 1em;  
-
-                    @media(min-width: 768px) {
-                        padding-right: 2em;
-                    }
-
-                    @media(min-width: 1024px) {
-                        padding-right: 2.6em;
-                    }
-
-                    &:last-of-type {
-                        padding-right:0;
-                    }
 
                     &__link {
+                        text-transform: lowercase;           
                         text-decoration: none;
                         color: $white;
-                        font-size: 0.875rem;
+                        font-size: 0.875rem;   
+                        padding-top: 0.5em;
+                        border-top: 1px solid transparent;
 
                         @media(min-width: 768px) {
                             font-size: 1rem;
@@ -105,18 +101,17 @@
                         @media(min-width: 1024px) {
                             font-size: 1.5rem;
                         }
-                        
+
                         &:hover,
                         &:focus,
                         &__active {
                             text-transform: uppercase;
-                            border-top: 1px solid $white;
-                            padding-top: 0.5em;
+                            border-top-color: $white;
 
-                            @media(min-width: 768px) {
-                                border-width: 3px;
-                                padding-top: 0.3em;
-                            }
+                            // @media(min-width: 768px) {
+                            //     border-width: 3px;
+                            //     padding-top: 0.3em;
+                            // }
                         }
                     }
                 }
@@ -124,3 +119,4 @@
         }
     }
 }
+

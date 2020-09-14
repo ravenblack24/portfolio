@@ -19,10 +19,10 @@
             <div class="header__container__intro"><h1>Front<br/> end<br /> developer</h1></div>
             <nav class="header__container__nav">
                 <ul class="header__container__nav__menu">
-                    <li class="header__container__nav__menu__item"><a href="#home" class="header__container__nav__menu__item__link">Home</a></li>
-                    <li class="header__container__nav__menu__item"><a href="#work" class="header__container__nav__menu__item__link">work</a></li>
-                    <li class="header__container__nav__menu__item"><a href="#about" class="header__container__nav__menu__item__link">about</a></li>
-                    <li class="header__container__nav__menu__item"><a href="#contact" class="header__container__nav__menu__item__link">contact</a></li>
+                    <li class="header__container__nav__menu__item"><a href="#home" class="header__container__nav__menu__item__link">Home</a></li><!--
+                    --><li class="header__container__nav__menu__item"><a href="#work" class="header__container__nav__menu__item__link header__container__nav__menu__item__link--work">work</a></li><!--
+                    --><li class="header__container__nav__menu__item"><a href="#about" class="header__container__nav__menu__item__link">about</a></li><!--
+                    --><li class="header__container__nav__menu__item"><a href="#contact" class="header__container__nav__menu__item__link">contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -124,7 +124,8 @@
             <h2 class="contact__container__title">Like what you see?</h2>
             <p class="contact__container__intro">get in touch.</p>
         </div>
-        <form method="POST" action="https://forms.un-static.com/forms/15eddbc3701325c860c61827026eb54580d1e0c0" class="contact__form">
+        <form method="POST"  action="thank-you.html" class="contact__form">
+            <!-- action="https://forms.un-static.com/forms/15eddbc3701325c860c61827026eb54580d1e0c0" -->
             <label for="name" class="contact__form__label">name</label>
             <input type="text" name="name" id="name" class="contact__form__field" required/> 
             <label for="email" class="contact__form__label">email</label>
@@ -157,13 +158,12 @@
                      event.preventDefault();
                      
                      const href = event.target.getAttribute("href").substring(1);
+                     console.log(href);
                      const offsetTop = document.getElementById(href).offsetTop;
 
-
-                     window.scrollTo({
-                         top: offsetTop,
-                         behaviour: 'smooth'
-                    })
+                     document.getElementById(href).scrollIntoView({
+                         behavior: 'smooth'
+                     });
                 });
             });
         });
