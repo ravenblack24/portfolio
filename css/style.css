@@ -194,10 +194,14 @@ body {
         padding: 0 0.5em; }
   @media (min-width: 768px) {
     .projects__container__list {
-      margin-top: 1em;
+      margin: 1em auto 0;
       display: flex;
       flex-direction: row;
-      flex-wrap: wrap; } }
+      flex-wrap: wrap;
+      width: 95%; } }
+  @media (min-width: 1024px) {
+    .projects__container__list {
+      width: 100%; } }
   .projects__container__list__cta {
     position: relative;
     display: block; }
@@ -259,16 +263,13 @@ body {
             background: gray; }
 
 .skills {
-  padding: 1.5em 1em 4em;
+  padding: 1.5em 1em 2em;
   font-family: "Roboto", sans-serif;
-  background-image: url(../images/birds.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat; }
+  background-color: lightgray; }
   @media (min-width: 768px) {
     .skills {
       padding-top: 3em;
-      padding-bottom: 5em; } }
+      padding-bottom: 3em; } }
   @media (min-width: 768px) {
     .skills__container {
       max-width: 415px;
@@ -341,6 +342,9 @@ body {
   z-index: 5;
   position: relative; }
   @media (min-width: 768px) {
+    .contact {
+      padding-top: 3em; } }
+  @media (min-width: 1024px) {
     .contact {
       padding-top: 4em; } }
   .contact__container {
