@@ -101,12 +101,12 @@ body {
             @media (min-width: 1024px) {
               .header__container__nav__menu__item__link {
                 font-size: 1.5rem; } }
-            .header__container__nav__menu__item__link:hover, .header__container__nav__menu__item__link:focus {
+            .header__container__nav__menu__item__link:hover, .header__container__nav__menu__item__link:focus, .header__container__nav__menu__item__link__active {
               text-transform: uppercase;
               border-top: 1px solid #ffffff;
               padding-top: 0.5em; }
               @media (min-width: 768px) {
-                .header__container__nav__menu__item__link:hover, .header__container__nav__menu__item__link:focus {
+                .header__container__nav__menu__item__link:hover, .header__container__nav__menu__item__link:focus, .header__container__nav__menu__item__link__active {
                   border-width: 3px;
                   padding-top: 0.3em; } }
 
