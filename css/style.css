@@ -64,6 +64,7 @@ body {
       padding-right: 1.25em;
       letter-spacing: -0.1em; }
     .header__container__nav {
+      background-color: #000000;
       padding: 1.75em 0 0.75em;
       margin: 0 auto;
       text-align: center; }
@@ -102,6 +103,10 @@ body {
             .header__container__nav__menu__item__link:hover, .header__container__nav__menu__item__link:focus, .header__container__nav__menu__item__link__active {
               text-transform: uppercase;
               border-top-color: #ffffff; }
+              @media (min-width: 768px) {
+                .header__container__nav__menu__item__link:hover, .header__container__nav__menu__item__link:focus, .header__container__nav__menu__item__link__active {
+                  border-width: 3px;
+                  padding-top: 0.3em; } }
 
 .intro {
   background-color: #F6E9E9;

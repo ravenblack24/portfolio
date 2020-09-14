@@ -17,8 +17,8 @@
                 </div>
             </div>
             <div class="header__container__intro"><h1>Front<br/> end<br /> developer</h1></div>
-            <nav class="header__container__nav">
-                <ul class="header__container__nav__menu">
+            <nav class="header__container__nav" >
+                <ul class="header__container__nav__menu" id="navbar">
                     <li class="header__container__nav__menu__item"><a href="#home" class="header__container__nav__menu__item__link">Home</a></li><!--
                     --><li class="header__container__nav__menu__item"><a href="#work" class="header__container__nav__menu__item__link header__container__nav__menu__item__link--work">work</a></li><!--
                     --><li class="header__container__nav__menu__item"><a href="#about" class="header__container__nav__menu__item__link">about</a></li><!--
@@ -150,6 +150,7 @@
         </ul> 
     </footer>
     <script>
+        // On scroll, page navigation
         window.addEventListener('DOMContentLoaded', (event) => {
 
             const elements = document.getElementsByClassName("header__container__nav__menu__item__link");
