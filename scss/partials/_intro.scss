@@ -4,7 +4,7 @@
     font-family: $ff-main;
 
     &__container {
-        @media(min-width: 768px) {
+        @media(min-width: 667px) {
             max-width: 430px;
             margin: 0 auto;
             padding-bottom: 0.5em;

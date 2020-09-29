@@ -17,7 +17,7 @@
         margin-bottom: 1.5em;
     
 
-        @media(min-width: 768px) {
+        @media(min-width: 667px) {
             max-width: 415px;
             margin: 0 auto;
         }
@@ -45,7 +45,7 @@
     }
 
     &__form {
-        @media(min-width: 768px) {
+        @media(min-width: 667px) {
             max-width: 415px;
             margin-top: 2em;
             margin-left: auto;
