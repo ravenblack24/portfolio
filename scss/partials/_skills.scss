@@ -82,7 +82,7 @@
                     }
                 }
 
-                @for $i from 1 through 5 {
+                @for $i from 1 through 6 {
                     & li.item-#{$i} {
                         border-color: lighten(#000, $i*15%);
                     }
