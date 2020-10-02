@@ -87,8 +87,8 @@
                 &:hover,
                 &:focus {
                     .projects__container__list__cta__overlay {
-                        opacity: 1;
                         display: block;
+                        opacity: 1;
                       }
                 }
 
@@ -114,8 +114,8 @@
                     right: 0;
                     height: 100%;
                     width: 100%;
-                    opacity: 0;
                     display: none;
+                    opacity: 0;
                     -moz-transition: .5s ease;
                     -webkit-transition: .5s ease;
                     -o-transition: .5s ease;
