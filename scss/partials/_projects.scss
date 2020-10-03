@@ -84,16 +84,11 @@
                 position: relative;
                 display: block;
 
-                // &:hover,
                 &--active {
                     .projects__container__list__cta__overlay {
                         display: block;
                         opacity: 1;
                       }
-
-                    //   .projects__container__list__cta__overlay__intro__cta {
-                    //      pointer-events: all;
-                    //   }
                 }
 
                 @media(min-width: 667px) {
@@ -157,7 +152,6 @@
                             font-size: 0.75em;
                             color: white;
                             border: none;
-                            pointer-events: none;
 
                             .fab,
                             .fas {
