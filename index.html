@@ -232,10 +232,13 @@
             const projectCTA = $(".projects__container__list__cta");
 
             projectCTA.bind("click mouseenter", function() {
-                $(this).addClass('projects__container__list__cta--active');
+                setTimeout(() => {
+                    $(this).addClass('projects__container__list__cta--active')},100
+                );
             })
             projectCTA.bind("mouseleave", function() {
-                $(this).removeClass('projects__container__list__cta--active');
+                setTimeout(() => {
+                $(this).removeClass('projects__container__list__cta--active')},100);
             })
             
         });
