@@ -84,8 +84,8 @@
                 position: relative;
                 display: block;
 
-                &:hover,
-                &:focus {
+                // &:hover,
+                &--active {
                     .projects__container__list__cta__overlay {
                         display: block;
                         opacity: 1;
