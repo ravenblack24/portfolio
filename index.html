@@ -210,25 +210,28 @@
              </li> 
         </ul> 
     </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
-        // On scroll, page navigation
-        window.addEventListener('DOMContentLoaded', (event) => {
+        $(document).ready(function() {
 
+            // Smooth scroll in-page navigation
             const elements = document.getElementsByClassName("header__container__nav__menu__item__link");
-            Array.from(elements).forEach(function(element) {
-                element.addEventListener('click', event => {
-                     event.preventDefault();
-                     
-                     const href = event.target.getAttribute("href").substring(1);
-                     const offsetTop = document.getElementById(href).offsetTop;
 
-                     document.getElementById(href).scrollIntoView({
-                         behavior: 'smooth'
-                     });
-                });
-            });
+            $(elements).on('click', function(event) {
+                if(this.hash !== "") {
+                    event.preventDefault();
 
+                    var hash = this.hash;
+
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function() {
+                        window.location.hash = hash;
+                    })
+                }
+            })
+
+            // Project touch/rollover effect
             const projectCTA = $(".projects__container__list__cta");
 
             projectCTA.bind("click mouseenter", function() {
@@ -238,9 +241,9 @@
             })
             projectCTA.bind("mouseleave", function() {
                 setTimeout(() => {
-                $(this).removeClass('projects__container__list__cta--active')},100);
+                    $(this).removeClass('projects__container__list__cta--active')},100
+                );
             })
-            
         });
     </script>
 </body>
