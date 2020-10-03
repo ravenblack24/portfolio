@@ -10,8 +10,7 @@
     <style>
         .fa,.fab,.fad,.fal,.far,.fas{-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;display:inline-block;font-style:normal;font-variant:normal;text-rendering:auto;line-height:1}.fab{font-family:"Font Awesome 5 Brands"}.fab,.far{font-weight:400}.fa,.far,.fas{font-family:"Font Awesome 5 Free"}.fa,.fas{font-weight:900}
     </style>
-    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'"/> 
-    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"></noscript>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" > 
 </head>
 <body>
     <header class="header" id="home">
@@ -193,6 +192,7 @@
             <input type="email" name="email" id="email" class="contact__form__field"  required />
             <label for="message" class="contact__form__label">your message</label>
             <textarea type="textarea" name="message" id="message"  class="contact__form__textarea" rows="8" required></textarea> 
+            <div class="g-recaptcha contact__form__captcha" data-sitekey="6LdBVdMZAAAAAChqqBMmvfFf_J5zNdzdEwR7pUdX"></div>
 
             <button class="contact__form__cta" type="submit">send</button>
         </form>
@@ -246,5 +246,6 @@
             })
         });
     </script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </body>
 </html>

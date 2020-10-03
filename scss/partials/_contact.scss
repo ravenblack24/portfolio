@@ -94,6 +94,14 @@
             }
         }
 
+        &__captcha {
+            margin-bottom: 1em;
+
+            div {
+                margin: 0 auto;
+            }
+        } 
+
         &__cta {
             width: 60%;
             height: 2.25em;
